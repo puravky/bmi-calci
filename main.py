@@ -2,12 +2,12 @@ import streamlit as st
 
 st.title("BMI Calculator App 💪")
 name = st.text_input("Enter your name:")
-age = st.number_input("Enter your age:", value=20, min_value=5, max_value=95, step=1)
+age = st.number_input("Enter your age:", value=20, min_value=5, max_value=95)
 if name:
     st.write(f"Hello!👋 {name}, Ready to calculate your BMI?")
 
-wt = st.number_input("Enter your weight (kgs):", value=60.0 ,min_value=10.0, step=0.1)
-height = st.number_input("Enter your height (cms):", value=150.0, min_value=50.0, step=1.0)
+wt = st.number_input("Enter your weight (kgs):", value=60 ,min_value=10)
+height = st.number_input("Enter your height (cms):", value=150, min_value=50)
 ht = height / 100
 
 if st.button("Calculate BMI"):
