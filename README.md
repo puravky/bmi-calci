@@ -1,1 +1,1 @@
-this is the readme.md file
+A simple BMI calculator app made using Streamlit
